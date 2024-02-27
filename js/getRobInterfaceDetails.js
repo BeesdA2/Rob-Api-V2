@@ -8,7 +8,7 @@ const {dbconn, dbstmt} = require('idb-connector');
      filiaal = 0;
      };
        
-    const sSql = 'SELECT * 	from ' + lib.trim() + '.robkeyf where roappl = \'' + applicatie + '\' and rokeyn = \'' + key +  '\' and ronumb = ' + filiaal + ' with NONE';
+    const sSql = 'SELECT * 	from ' + lib.trim() + '.oauthkeyf where oaappl = \'' + applicatie + '\' and oakeyn = \'' + key +  '\' and oafiln = ' + filiaal + ' with NONE';
 	//console.log("Sql: " + sSql);
     const connection = new dbconn();
     connection.conn('*LOCAL');
