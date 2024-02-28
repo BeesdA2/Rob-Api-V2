@@ -9,7 +9,7 @@ const qs = require('qs');
 async function createAndSendRequest (guid, lib, filiaal, applicatie, urlParameters, body) {
    
     // Ophalen gegevens Apitoken
-  const respapi    = await getRobInterfaceDetails(lib, filiaal, 'ROB_API', 'ApiKeyHeader');
+  const respapi    = await getRobInterfaceDetails2(lib, filiaal, 'ROB_API', 'ApiKeyHeader');
   // Ophalen gegevens Endpoint
   console.log("Applicatie : " + applicatie );
   const resprob   = await getRobInterfaceDetails(lib, null, applicatie, 'URL');
@@ -19,9 +19,9 @@ async function createAndSendRequest (guid, lib, filiaal, applicatie, urlParamete
  let resultrob = await resprob;
 
 // Informatie voor bericht Rob samenstellen 
-let apiToken   = resultapi[0].ROKEYV.trim();	
-let robUrl     = resultrob[0].ROKEYV.trim();
-let httpMethod = resultrob[0].ROEXTR.trim(); 
+let apiToken   = resultapi[0].OAKEYV.trim();	
+let robUrl     = resultrob[0].APKEYV.trim();
+let httpMethod = resultrob[0].APEXTR.trim(); 
    
 	try {
 		if(urlParameters === null){
