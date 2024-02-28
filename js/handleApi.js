@@ -1,4 +1,6 @@
 const { getRobInterfaceDetails } = require("./getRobInterfaceDetails.js");
+const { getRobInterfaceDetails2 } = require("./getRobInterfaceDetails.js");
+
 const { writeErrorLog } = require("./writeErrorLog.js");
 const { updateServiceRequestLogResponse } = require("./handleServiceRequestDb.js"); 
 
